@@ -1,10 +1,10 @@
-x = 20
-y = 25
-if x > y:
-  x, y = y, x
-for i in range(1,x+1):
-  if x%i == 0 and y%i == 0:
-    gcd = i
-lcm = (x*y)/gcd
+#to pring fibonacci series
 
-print("LCM of", x, "and", y, "is:", lcm)
+a=0
+b=1
+x=int(input('Enter the number you want:'))
+for i in range(1,x+1):
+  print(a,end='\t')
+  c=a+b
+  a=b
+  b=c
